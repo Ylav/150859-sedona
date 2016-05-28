@@ -3,7 +3,7 @@
 * Студент: [Валентина Кравченко](https://up.htmlacademy.ru/adaptive/7/user/150859).
 * Наставник: Максим Гатилин (https://htmlacademy.ru/profile/id187233).
 
----
+---Привет, Максим!
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitignore`, `.travis.yml`, `package.json`._
