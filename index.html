@@ -6,44 +6,89 @@
   </head>
   <body>
     <header class="page-header">
-      <h2 class="visually-hidden">Навигация сайта</h2>
-      <nav>
+      <nav class="main-nav main-nav--closed">
         <ul>
-          <li>Главная</li>
-          <li>Фото и видео</li>
-          <li>Форма отзыва</li>
-          <li>HTML Academy</li>
+          <li class="main-nav__link"><a href="#">Главная</a></li>
+          <li class="main-nav__link"><a href="#">Фото и видео</a></li>
+          <li class="main-nav__link"><a href="#">Форма отзыва</a></li>
+          <li class="main-nav__link"><a href="#">HTML Academy</a></li>
         </ul>
+        <div class="main-logo"><img src="#" alt="City of Sedona" />/div>
+        <button class="main-nav__toggle" type="button">Показать меню</button>
       </nav>
-      <div class="main-photo">
-        <div class="main-photo__logo"></div>
-        <div class="main-photo__nav"></div>
-        <div class="main-photo__photo"></div>
+      <div class="page-header__photo">
+        <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
+        <blockquote class="visually-hidden">"Because the Grand Canyon Sucks!"</blockquote>
+        <img src="#" alt="Welcome to the gorgeous Sedona" />
       </div>
     </header>
     <main class="page-main">
-      <header class="page-main__header">
-        <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <section class="page-main__intro">
+        <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
-      </header>
-      <section class="page-main__advantages">
-        <div class="page-main__advantages__city">Настоящий городок</div>
-        <div class="page-main__advantages__bridge">Там есть Мост дьявола</div>
-        <div class="page-main__advantages__square">Небольшая площадь</div>
-        <div class="page-main__advantages__road">Красивая дорога</div>
-        <div class="page-main__advantages__alone">Мало туристов</div>
       </section>
-      <section class="page-main__booking">
-        <h2>Заинтересовались?</h2>
+      <section class="advantages">
+        <div class="advantage advantage--city">
+          <h3>Настоящий городок</h3>
+          <span> — №1 — </span>
+          <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <img src="#" alt="Настоящий городок" />
+          <ul>
+            <li>
+              <b>Жилье</b>
+              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li>
+              <b>Сувениры</b>
+              <p>Не только китайского, но и местного производства!</p>
+            </li>
+            <li>
+              <b>Еда</b>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+          </ul>
+        </div>
+        <div class="advantage advantage--bridge">
+          <h3>Там есть мост Дьявола</h3>
+          <span> — №2 — </span>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <img src="#" alt="Мост Дьявола" />
+        </div>
+        <div class="advantage advantage--square">
+          <h3>Небольшая площадь</h3>
+          <span> — №3 — </span>
+          <p>Все достопримечательности находятся очень близко</p>
+        </div>
+        <div class="advantage advantage--road">
+          <h3>Красивая дорога</h3>
+          <span> — №4 — </span>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+        <div class="advantage advantage--alone">
+          <h3>Мало туристов</h3>
+          <span> — №5 — </span>
+          <p>Большинство едет в Гранд-Каньон и толпится там</p>
+        </div>
+      </section>
+      <section class="booking">
+        <h3>Заинтересовались?</h3>
         <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a href="#" class="page-main__find">Найти гостиницу</a>
-        <img src="#" alt="map" />
+        <button class="booking__hotel">Найти гостиницу</button>
+        <a href="#" class="booking__map"><img src="#" alt="карта"/></a>
       </section>
     </main>
     <footer class="page-footer">
-      <h2 class="page-footer__hashtag">#visitSEDONA</h2>
-      <div class="page-footer__social"></div>
-      <div class="page-footer__copyright"></div>
+      <div class="page-footer__hashtag">#visitSEDONA</div>
+      <div class="page-footer__social">
+        <ul>
+          <li><a href="#" class="">Twitter</a></li>
+          <li><a href="#" class="">Facebook</a></li>
+          <li><a href="#" class="">Youtube</a></li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright">Разработано
+        <a href="#" class="copyright__logo">HTMLAcademy</a>
+      </div>
     </footer>
   </body>
 </html>
