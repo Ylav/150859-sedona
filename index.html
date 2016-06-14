@@ -8,14 +8,14 @@
     <header class="page-header">
       <nav class="main-nav main-nav--closed">
         <ul>
-          <li class="link link--main-nav"><a href="#">Главная</a></li>
-          <li class="link link--main-nav"><a href="#">Фото и видео</a></li>
-          <li class="link link--main-nav"><a href="#">Форма отзыва</a></li>
-          <li class="link link--main-nav"><a href="#">HTML Academy</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Фото и видео</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Форма отзыва</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
         </ul>
         <div class="main-nav__wrapper">
           <div class="main-logo"><img src="#" alt="City of Sedona" /></div>
-          <button class="main-nav__toggle" type="button">Показать меню</button>
+          <div class="main-nav__toggle">Показать меню</div>
         </div>
       </nav>
       <div class="main-photo-wrapper">
@@ -36,18 +36,18 @@
           <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <img src="#" alt="Настоящий городок" class="advantage__img"/>
-        <ul  class="promo-list">
-          <li  class="promo-list__item promo-list__item--motel">
-            <b>Жилье</b>
-            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        <ul class="promo-list">
+          <li class="promo-list__item">
+            <b class="promo-list__title promo-list__title--motel">Жилье</b>
+            <p class="promo-list__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
-          <li  class="promo-list__item promo-list__item--gifts">
-            <b>Сувениры</b>
-            <p>Не только китайского, но и местного производства!</p>
+          <li class="promo-list__item">
+            <b class="promo-list__title promo-list__title--gifts">Сувениры</b>
+            <p class="promo-list__text">Не только китайского, но и местного производства!</p>
           </li>
-          <li  class="promo-list__item promo-list__item--food">
-            <b>Еда</b>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          <li class="promo-list__item">
+            <b class="promo-list__title promo-list__title--food">Еда</b>
+            <p class="promo-list__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
         </ul>
       </section>
@@ -83,8 +83,10 @@
       <section class="booking">
         <h3 class="booking__title">Заинтересовались?</h3>
         <p class="booking__text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="link link--booking">Найти гостиницу</button>
-        <a href="#" class="booking__map"><img src="#" alt="карта"/></a>
+        <button class="btn btn--booking">Найти гостиницу</button>
+        <div class="booking__map">
+          <img src="#" alt="карта"/>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -93,9 +95,9 @@
       </div>
       <div class="page-footer__section page-footer__section--social">
         <ul>
-          <li class="social-link social-link--tw"><a href="#">Twitter</a></li>
-          <li class="social-link social-link--fb"><a href="#">Facebook</a></li>
-          <li class="social-link social-link--yt"><a href="#">Youtube</a></li>
+          <li class="social-item"><a  class="social-link social-link--tw" href="#">Twitter</a></li>
+          <li class="social-item"><a  class="social-link social-link--fb" href="#">Facebook</a></li>
+          <li class="social-item"><a  class="social-link social-link--yt" href="#">Youtube</a></li>
         </ul>
       </div>
       <div class="page-footer__section page-footer__section--copyright">Разработано

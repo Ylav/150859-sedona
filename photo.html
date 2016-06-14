@@ -2,20 +2,20 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>HTML Academy: Седона фотографии</title>
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav main-nav--closed">
         <ul>
-          <li class="link main-nav--link"><a href="#">Главная</a></li>
-          <li class="link main-nav--link"><a href="#">Фото и видео</a></li>
-          <li class="link main-nav--link"><a href="#">Форма отзыва</a></li>
-          <li class="link main-nav--link"><a href="#">HTML Academy</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Фото и видео</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Форма отзыва</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
         </ul>
         <div class="main-nav__wrapper">
           <div class="main-logo"><img src="#" alt="City of Sedona" /></div>
-          <button class="main-nav__toggle" type="button">Показать меню</button>
+          <div class="main-nav__toggle">Показать меню</div>
         </div>
       </nav>
       <div class="main-photo-wrapper">
@@ -34,36 +34,32 @@
           <img class="photo-list-item__photo" src="#" alt="Неродные просторы" width="280" height="280" />
           <figcaption class="photo-list-item__figcaption">Неродные просторы
             <div class="photographer">Автор: Борис</div>
-            <div class="likes">Понравилось:
-              <span class="likes__number">1350</span>
-            </div>
+            <a class="likes" href="#">Понравилось:</a>
+            <span class="likes__number">1350</span>
           </figcaption>
         </figure>
         <figure class="photo-list-item">
           <img class="photo-list-item__photo" src="#" alt="Местная растительность" width="280" height="280" />
           <figcaption class="photo-list-item__figcaption">Местная растительность
             <div class="photographer">Автор: Сергей</div>
-            <div class="likes">Понравилось:
-              <span class="likes__number">143</span>
-            </div>
+            <a class="likes" href="#">Понравилось:</a>
+            <span class="likes__number">143</span>
           </figcaption>
         </figure>
         <figure class="photo-list-item">
           <img class="photo-list-item__photo" src="#" alt="Дорога на север" width="280" height="280" />
           <figcaption class="photo-list-item__figcaption">Дорога на север
             <div class="photographer">Автор: Петр</div>
-            <div class="likes">Понравилось:
-              <span class="likes__number">96</span>
-            </div>
+            <a class="likes" href="#">Понравилось:</a>
+            <span class="likes__number">96</span>
           </figcaption>
         </figure>
         <figure class="photo-list-item">
           <img class="photo-list-item__photo" src="#" alt="Мост дьявола" width="280" height="280" />
           <figcaption class="photo-list-item__figcaption">Мост дьявола
             <div class="photographer">Автор: Антон</div>
-            <div class="likes">Понравилось:
-              <span class="likes__number">254</span>
-            </div>
+            <a class="likes" href="#">Понравилось:</a>
+            <span class="likes__number">254</span>
           </figcaption>
         </figure>
       </section>
@@ -73,15 +69,13 @@
       </section>
       <section class="promo-video">
         <h3 class="visually-hidden">Видеоролик о Седоне:</h3>
-        <video preload="metadata" width="320" height="200" poster="#">
-          <source src="#.mp4" type="video/mp4">
-          <source src="#.ogv" type="video/ogg">
-          <source src="#.webm" type="video/webm">
-        </video>
-        <div class="promo-video__volume-scale">Громкость</div>
-        <button class="promo-video__toggle promo-video__toggle--replay" type="button">Повторить</button>
-        <button class="promo-video__toggle promo-video__toggle--subtitles" type="button">Субтитры</button>
-        <button class="promo-video__toggle promo-video__toggle--fullscreen" type="button">Во весь экран</button>
+        <div class="promo-video__wrapper">
+          <img class="promo-video__preview-img" src="#" alt="Видео о Седоне" />
+          <div class="promo-video__volume-scale">Громкость</div>
+          <div class="promo-video__toggle promo-video__toggle--replay">Повторить</div>
+          <div class="promo-video__toggle promo-video__toggle--subtitles">Субтитры</div>
+          <div class="promo-video__toggle promo-video__toggle--fullscreen">Во весь экран</div>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -90,9 +84,9 @@
       </div>
       <div class="page-footer__section page-footer__section--social">
         <ul>
-          <li class="social-link social-link--tw"><a href="#">Twitter</a></li>
-          <li class="social-link social-link--fb"><a href="#">Facebook</a></li>
-          <li class="social-link social-link--yt"><a href="#">Youtube</a></li>
+          <li class="social-item"><a  class="social-link social-link--tw" href="#">Twitter</a></li>
+          <li class="social-item"><a  class="social-link social-link--fb" href="#">Facebook</a></li>
+          <li class="social-item"><a  class="social-link social-link--yt" href="#">Youtube</a></li>
         </ul>
       </div>
       <div class="page-footer__section page-footer__section--copyright">Разработано

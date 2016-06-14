@@ -2,20 +2,20 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>HTML Academy: Седона обратная связь</title>
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav main-nav--closed">
         <ul>
-          <li class="link main-nav--link"><a href="#">Главная</a></li>
-          <li class="link main-nav--link"><a href="#">Фото и видео</a></li>
-          <li class="link main-nav--link"><a href="#">Форма отзыва</a></li>
-          <li class="link main-nav--link"><a href="#">HTML Academy</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Фото и видео</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Форма отзыва</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
         </ul>
         <div class="main-nav__wrapper">
           <div class="main-logo"><img src="#" alt="City of Sedona" /></div>
-          <button class="main-nav__toggle" type="button">Показать меню</button>
+          <div class="main-nav__toggle">Показать меню</div>
         </div>
       </nav>
       <div class="main-photo-wrapper">
@@ -29,43 +29,67 @@
         <p class="page-main-intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
       <form class="feedback-form" method="post" action="#" name="feedback">
-        <fieldset class="feedback-form__fieldset">
-          <legend class="feedback-form__legend">Представьтесь, пожалуйста:</legend>
-            <label class="feedback-form__text-label" for="name">Имя</label><input class="feedback-form__cell feedback-form__cell--name" id="name" type="text" value="Петр"><br>
-            <label class="feedback-form__text-label" for="surname">Фамилия</label><input class="feedback-form__cell feedback-form__cell--surname" id="surname" type="text" value="Иванов"><br>
-            <label class="feedback-form__text-label" for="middle-name">Отчество</label><input  class="feedback-form__cell feedback-form__cell--middle-name" id="middle-name" type="text" value="Александрович">
-        </fieldset>
-        <fieldset class="feedback-form__fieldset">
-        <legend class="feedback-form__legend">Контактная информация:</legend>
-          <label class="feedback-form__text-label" for="tel">Контактный телефон:</label><input class="feedback-form__cell feedback-form__cell--phone" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" value="Введите телефон" />
+        <div class="feedback-form__section">
+          <h3 class="feedback-form__title">Представьтесь, пожалуйста:</h3>
+            <label class="feedback-form__text-label" for="name">Имя
+              <input class="feedback-form__cell feedback-form__cell--name" id="name" type="text" value="Петр">
+            </label>
+            <label class="feedback-form__text-label" for="surname">Фамилия
+              <input class="feedback-form__cell feedback-form__cell--surname" id="surname" type="text" value="Иванов">
+            </label>
+            <label class="feedback-form__text-label" for="middle-name">Отчество
+              <input  class="feedback-form__cell feedback-form__cell--middle-name" id="middle-name" type="text" value="Александрович">
+            </label>
+        </div>
+        <div class="feedback-form__section">
+        <h3 class="feedback-form__title">Контактная информация:</h3>
+          <label class="feedback-form__text-label" for="tel">Контактный телефон:
+            <input class="feedback-form__cell feedback-form__cell--phone" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" value="Введите телефон" />
+          </label>
           <div class="error">Ошибка, перепроверьте номер</div>
-          <label class="feedback-form__text-label" for="email">Электронная почта</label><input class="feedback-form__cell feedback-form__cell--email" type="email" id="email" name="email" value="Введите e-mail" />
-        </fieldset>
-        <fieldset class="feedback-form__fieldset">
-          <legend class="feedback-form__legend">Ваше общее впечатление:</legend>
-          <input class="feedback-form__rb-cell" type="radio" name="effect" id="positive" value="positive" checked />
-          <label class="feedback-form__rb-label" for="positive">Скорее положительное</label><br>
-          <input class="feedback-form__rb-cell" type="radio" name="effect" id="negative" value="negative" />
-          <label  class="feedback-form__rb-label" for="negative">Скорее отрицательное</label><br>
-          <input class="feedback-form__rb-cell" type="radio" name="effect" id="neutral" value="neutral" />
-          <label class="feedback-form__rb-label" for="neutral">Затрудняюсь ответить</label>
-        </fieldset>
-        <fieldset class="feedback-form__fieldset">
-          <legend class="feedback-form__legend">Посещенные достопримечательности:</legend>
-          <input class="feedback-form__ch-cell" type="checkbox" name="places" value="devil" id="devil" checked />
-          <label class="feedback-form__ch-label" for="devil">Мост Дьявола</label><br>
-          <input class="feedback-form__ch-cell" type="checkbox" name="places" value="park" id="park" checked />
-          <label class="feedback-form__ch-label" for="park">Слайд-парк</label><br>
-          <input class="feedback-form__ch-cell" type="checkbox" name="places" value="mountain" id="mountain" />
-          <label class="feedback-form__ch-label" for="mountain">Гора-Колокол</label><br>
-          <input class="feedback-form__ch-cell" type="checkbox" name="places" value="rocks" id="rocks" checked />
-          <label class="feedback-form__ch-label" for="rocks">Красные скалы</label>
-        </fieldset>
-        <fieldset class="feedback-form__fieldset">
-          <legend class="feedback-form__legend">Опишите свои эмоции:</legend>
+          <label class="feedback-form__text-label" for="email">Электронная почта
+            <input class="feedback-form__cell feedback-form__cell--email" type="email" id="email" name="email" value="Введите e-mail" />
+          </label>
+        </div>
+        <div class="feedback-form__section">
+          <h3 class="feedback-form__title">Ваше общее впечатление:</h3>
+          <label class="feedback-form__rb-label" for="positive">
+            <input class="feedback-form__rb-cell" type="radio" name="effect" id="positive" value="positive" checked />
+            <span class="feedback-form__rb-title">Скорее положительное</span>
+          </label>
+          <label  class="feedback-form__rb-label" for="negative">
+            <input class="feedback-form__rb-cell" type="radio" name="effect" id="negative" value="negative" />
+            <span class="feedback-form__rb-title">Скорее отрицательное</span>
+          </label>
+          <label class="feedback-form__rb-label" for="neutral">
+            <input class="feedback-form__rb-cell" type="radio" name="effect" id="neutral" value="neutral" />
+            <span class="feedback-form__rb-title">Затрудняюсь ответить</span>
+          </label>
+        </div>
+        <div class="feedback-form__section">
+          <h3 class="feedback-form__title">Посещенные достопримечательности:</h3>
+          <label class="feedback-form__ch-label" for="devil">
+            <input class="feedback-form__ch-cell" type="checkbox" name="places" value="devil" id="devil" checked />
+            <span class="feedback-form__ch-title">Мост Дьявола</span>
+          </label>
+          <label class="feedback-form__ch-label" for="park">
+            <input class="feedback-form__ch-cell" type="checkbox" name="places" value="park" id="park" checked />
+            <span class="feedback-form__ch-title">Слайд-парк</span>
+          </label>
+          <label class="feedback-form__ch-label" for="mountain">
+            <input class="feedback-form__ch-cell" type="checkbox" name="places" value="mountain" id="mountain" />
+            <span class="feedback-form__ch-title">Гора-Колокол</span>
+          </label>
+          <label class="feedback-form__ch-label" for="rocks">
+            <input class="feedback-form__ch-cell" type="checkbox" name="places" value="rocks" id="rocks" checked />
+            <span class="feedback-form__ch-title">Красные скалы</span>
+          </label>
+        </div>
+        <div class="feedback-form__section">
+          <h3 class="feedback-form__title">Опишите свои эмоции:</h3>
           <textarea class="feedback-form__cell feedback-form__cell--textarea" name="name" rows="8" cols="40">Опишите подробно все свои восторги </textarea>
-        </fieldset>
-        <button type="submit" name="feedback-form__submit" class="link link--feedback-submit">Отправить отзыв</button>
+        </div>
+        <button type="submit" name="feedback-form__submit" class="btn btn--feedback-submit">Отправить отзыв</button>
       </form>
     </main>
     <footer class="page-footer">
@@ -74,9 +98,9 @@
       </div>
       <div class="page-footer__section page-footer__section--social">
         <ul>
-          <li class="social-link social-link--tw"><a href="#">Twitter</a></li>
-          <li class="social-link social-link--fb"><a href="#">Facebook</a></li>
-          <li class="social-link social-link--yt"><a href="#">Youtube</a></li>
+          <li class="social-item"><a  class="social-link social-link--tw" href="#">Twitter</a></li>
+          <li class="social-item"><a  class="social-link social-link--fb" href="#">Facebook</a></li>
+          <li class="social-item"><a  class="social-link social-link--yt" href="#">Youtube</a></li>
         </ul>
       </div>
       <div class="page-footer__section page-footer__section--copyright">Разработано
