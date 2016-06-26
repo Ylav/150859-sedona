@@ -1,0 +1,11 @@
+@import "variables.scss";
+
+
+.feedback-form__cell {
+  outline: none;
+  border: none;
+}
+
+.btn--feedback-submit {
+  width: $body-size;
+}

@@ -1,0 +1,18 @@
+@import "variables.scss";
+
+.main-photo {
+  min-height: 160px;
+  background-image: $main-photo;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #4878a6;
+}
+
+.main-photo--full {
+  min-height: 380px;
+}
+
+.main-photo__title,
+.main-photo__blockquote {
+  font-size: 0;
+}

@@ -1,0 +1,49 @@
+@import "variables.scss";
+
+
+.advantage {
+  width: $body-size;
+}
+
+.advantage__head--full {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: $white;
+  background-color: $blue;
+}
+
+.advantage__head {
+  padding-left: $small-margin;
+  padding-right: $small-margin;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.advantage__title {
+  margin: 0;
+  font-size: $title;
+}
+
+.advantage__number {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  font-size: $text;
+}
+
+.advantage__text {
+  margin: 0;
+  font-size: $text;
+  line-height: 21px;
+}
+
+.promo-list {
+  padding-left: $padding-big;
+  list-style: none;
+}
+
+.promo-list__text {
+  margin-top: $small-margin;
+  margin-bottom: $medium-margin;
+}

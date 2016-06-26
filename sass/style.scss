@@ -1,0 +1,31 @@
+@import "variables.scss";
+@import "main-photo.scss";
+@import "main-nav.scss";
+@import "advantage.scss";
+@import "btn.scss";
+@import "social.scss";
+@import "main-logo.scss";
+@import "page-main-intro.scss";
+@import "advantage.scss";
+@import "booking.scss";
+@import "page-footer.scss";
+@import "feedback-form.scss";
+
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $white;
+  width: $body-size;
+  text-transform: uppercase;
+  font-family: $font-family;
+}
+
+a {
+  cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
