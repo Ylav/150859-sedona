@@ -1,37 +1,19 @@
-@import "variables.scss";
-@import "main-photo.scss";
-@import "main-nav.scss";
-@import "advantage.scss";
-@import "btn.scss";
-@import "social.scss";
-@import "main-logo.scss";
-@import "page-main-intro.scss";
-@import "advantage.scss";
-@import "booking.scss";
-@import "page-footer.scss";
-@import "feedback-form.scss";
-@import "photo-list.scss";
-@import "photo-list-item.scss";
-@import "video-intro.scss";
-@import "visually-hidden.scss";
-@import "promo-video.scss";
-@import "promo-list.scss";
-
-
-body {
-  margin-left: auto;
-  margin-right: auto;
-  background-color: $white;
-  width: $body-size;
-  text-transform: uppercase;
-  font-family: $font-family;
-}
-
-a {
-  cursor: pointer;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
+@import "variables";
+@import "main-photo";
+@import "main-nav";
+@import "advantage";
+@import "btn";
+@import "social";
+@import "main-logo";
+@import "page-main-intro";
+@import "advantage";
+@import "booking";
+@import "page-footer";
+@import "feedback-form";
+@import "photo-list";
+@import "photo-list-item";
+@import "video-intro";
+@import "promo-video";
+@import "promo-list";
+@import "base";
+@import "error";
