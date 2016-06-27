@@ -8,12 +8,15 @@
 }
 
 .photo-list-item__photo {
-  width: $photo-size;
+  margin-left: $small-margin;
+  margin-right: $small-margin;
   margin-top: 22px;
 }
 
 .photo-list-item__figcaption {
   width: $photo-size;
+  margin-left: $small-margin;
+  margin-right: $small-margin;
   padding-top: $small-margin;
   padding-bottom: $small-margin;
   font-size: $text;

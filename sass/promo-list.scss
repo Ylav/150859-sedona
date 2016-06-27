@@ -1,1 +1,14 @@
 @import "variables.scss";
+
+.promo-list {
+  margin: 0;
+  padding-left: $padding-big;
+  padding-top: 35px;
+  list-style: none;
+  background-color: $white;
+}
+
+.promo-list__text {
+  margin-top: $small-margin;
+  margin-bottom: $medium-margin;
+}

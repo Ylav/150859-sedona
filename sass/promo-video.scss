@@ -3,6 +3,12 @@
 
 .promo-video__wrapper {
   position: relative;
+  background-color: $white_3;
+}
+
+.promo-video__toggles{
+  min-height: 70px;
+  background-color: $white_3;
 }
 
 .promo-video__toggle {
@@ -11,13 +17,11 @@
   font-size: 0;
   background-color: $blue;
 }
-.promo-video__toggle--replay {
-  float: left;
-}
 
+.promo-video__toggle--replay,
 .promo-video__toggle--subtitles,
 .promo-video__toggle--fullscreen {
-  float: right;
+  position: absolute;
 }
 
 .promo-video__volume-scale {

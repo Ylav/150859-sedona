@@ -3,25 +3,23 @@
 
 .advantage {
   width: $body-size;
+  background-color: $white_advantage;
 }
 
 .advantage__head--full {
-  padding-top: 40px;
-  padding-bottom: 40px;
   color: $white;
   background-color: $blue;
 }
 
 .advantage__head {
-  padding-left: $small-margin;
-  padding-right: $small-margin;
-  padding-top: 30px;
-  padding-bottom: 30px;
   text-align: center;
 }
 
 .advantage__title {
+  padding-top: 30px;
   margin: 0;
+  margin-left: $small-margin;
+  margin-right: $small-margin;
   font-size: $title;
 }
 
@@ -33,17 +31,18 @@
 }
 
 .advantage__text {
+  padding-bottom: 30px;
   margin: 0;
+  margin-left: $small-margin;
+  margin-right: $small-margin;
   font-size: $text;
   line-height: 21px;
 }
 
-.promo-list {
-  padding-left: $padding-big;
-  list-style: none;
+.advantage__title--road {
+  border-top: $border;
 }
 
-.promo-list__text {
-  margin-top: $small-margin;
-  margin-bottom: $medium-margin;
+.advantage__text--road {
+  border-bottom: $border;
 }
