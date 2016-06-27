@@ -1,1 +1,28 @@
 @import "variables.scss";
+
+
+.photo-list-item {
+  border-top: $border;
+  margin: 0;
+  padding: 0;
+}
+
+.photo-list-item__photo {
+  width: $photo-size;
+  margin-top: 22px;
+}
+
+.photo-list-item__figcaption {
+  width: $photo-size;
+  padding-top: $small-margin;
+  padding-bottom: $small-margin;
+  font-size: $text;
+  font-weight: bold;
+}
+
+.photographer {
+  margin-top: 7px;
+  margin-bottom: 12px;
+  text-transform: none;
+  font-weight: normal;
+}

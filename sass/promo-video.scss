@@ -1,1 +1,32 @@
 @import "variables.scss";
+
+
+.promo-video__wrapper {
+  position: relative;
+}
+
+.promo-video__toggle {
+  width: 35px;
+  height: 22px;
+  font-size: 0;
+  background-color: $blue;
+}
+.promo-video__toggle--replay {
+  float: left;
+}
+
+.promo-video__toggle--subtitles,
+.promo-video__toggle--fullscreen {
+  float: right;
+}
+
+.promo-video__volume-scale {
+  position: absolute;
+  width: 280px;
+  min-height: 45px;
+  top: 156px;
+  left: 20px;
+  font-size: 0;
+  background-color: $darkgrey;
+  opacity: 0.6;
+}

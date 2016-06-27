@@ -1,11 +1,63 @@
 @import "variables.scss";
 
 
+.feedback-form__section {
+  border-top: $border;
+}
+
+.feedback-form__line {
+  padding-left: 20px;
+}
+
+.feedback-form__title {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: $title;
+  line-height: $line-height-big;
+}
+
+.feedback-form__text-label {
+  font-size: $text;
+}
+
+.feedback-form__text-label--contacts,
+.feedback-form__cell--contacts {
+  padding-left: 42px;
+}
+
 .feedback-form__cell {
   outline: none;
   border: none;
+  font-weight: bold;
+  font-size: $title;
 }
 
 .btn--feedback-submit {
   width: $body-size;
+}
+
+.feedback-form__rb-label,
+.feedback-form__ch-label {
+  display: block;
+}
+
+.feedback-form__rb-title,
+.feedback-form__ch-title {
+  text-transform: none;
+  font-weight: bold;
+  font-size: $title;
+  line-height: $line-height-big;
+}
+
+.error {
+  padding-left: 42px;
+  color:$red;
+  font-size: 14px;
+  text-transform: none;
+}
+
+.feedback-form__cell--textarea {
+  padding-left: 30px;
 }
