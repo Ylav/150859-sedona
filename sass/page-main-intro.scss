@@ -1,0 +1,22 @@
+.page-main-intro {
+  min-height: 240px;
+  text-align: center;
+}
+
+.page-main-intro__title {
+  margin: 0;
+  padding-top: 43px;
+  padding-left: $small-margin;
+  padding-right: $small-margin;
+  font-size: $title;
+  line-height: 26px;
+}
+
+.page-main-intro__text {
+  margin: 0;
+  padding-top: 32px;
+  padding-left: $small-margin;
+  padding-right: $small-margin;
+  font-size: $text;
+  line-height: 26px;
+}

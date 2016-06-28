@@ -1,0 +1,18 @@
+.btn {
+  width: $body-size - 40px;
+  padding-top: $btn-padding;
+  padding-bottom: $btn-padding;
+  display: block;
+  font-size: $big-title;
+  text-decoration: none;
+  font-weight: bold;
+  color: $white;
+  line-height: $line-height-big;
+  background-color: $blue;
+  border: none;
+  text-transform: uppercase;
+}
+
+button {
+  outline: none;
+}

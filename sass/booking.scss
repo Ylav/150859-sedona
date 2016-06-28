@@ -1,0 +1,24 @@
+.booking {
+  padding-left: $small-margin;
+  padding-right: $small-margin;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.booking__title {
+  margin-top: $medium-margin;
+  margin-bottom: $small-margin;
+  font-size: $big-title;
+  line-height: $line-height-big;
+}
+
+.booking__text {
+  margin: 0;
+  font-size: $text;
+  line-height: 24px;
+}
+
+.booking .btn {
+  margin-bottom: $big-margin;
+  margin-top: $medium-margin;
+}

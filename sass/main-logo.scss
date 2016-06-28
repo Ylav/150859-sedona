@@ -1,0 +1,20 @@
+.main-logo {
+  width: 102px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  height: 21px;
+  width: 23px;
+  top: 16px;
+  right: 20px;
+  font-size: 0;
+  background-color: $blue;
+}
+
+.main-logo a {
+  position: absolute;
+}

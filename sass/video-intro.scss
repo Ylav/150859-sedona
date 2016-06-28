@@ -1,0 +1,21 @@
+.video-intro {
+  border-top: $border;
+  text-align: center;
+}
+
+.video-intro__title {
+  margin-left: $small-margin;
+  margin-right: $small-margin;
+  margin-top: 35px;
+  margin-bottom: 30px;
+  font-size: $title;
+}
+
+.video-intro__text {
+  margin-left: $small-margin;
+  margin-right: $small-margin;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  font-size: $text;
+  line-height: $line-height-medium;
+}

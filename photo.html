@@ -3,60 +3,65 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона фотографии</title>
+    <link href="/fonts/ptsans.woff" rel='stylesheet' type='text/css'>
+    <link href="/fonts/ptsans.woff2" rel='stylesheet' type='text/css'>
+    <link href="/fonts/ptsansbold.woff" rel='stylesheet' type='text/css'>
+    <link href="/fonts/ptsansbold.woff2" rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav main-nav--closed">
         <ul>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Фото и видео</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Форма отзыва</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
+          <span class="main-nav__close">Закрыть меню</span>
+          <li class="main-nav__item"><a class="main-nav__link" href="/index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="/photo.html">Фото и видео</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="/feedback.html">Форма отзыва</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
         </ul>
         <div class="main-nav__wrapper">
           <div class="main-logo"><img src="#" alt="City of Sedona" /></div>
           <div class="main-nav__toggle">Показать меню</div>
         </div>
       </nav>
-      <div class="main-photo-wrapper">
-        <h1 class="visually-hidden">Sedona</h1>
-        <img class="main-photo" src="#" alt="Sedona" />
+      <div class="main-photo">
+        <h1 class="main-photo__title">Sedona</h1>
       </div>
     </header>
     <main class="page-main">
       <section class="page-main-intro">
         <h2 class="page-main-intro__title">Фото и видео</h2>
-        <p class="page-main-intro__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике!</p>
+        <p class="page-main-intro__text">Не можете решиться на путешествие из-за курса? Фотографии помогут<br> вам забыть о политике и экономике!</p>
       </section>
       <section class="photo-list">
         <figure class="photo-list-item">
-          <img class="photo-list-item__photo" src="#" alt="Неродные просторы" width="280" height="280" />
+          <img class="photo-list-item__photo" src="/img/photo-1-mobile@1x.jpg" alt="Неродные просторы" width="280" height="280" />
           <figcaption class="photo-list-item__figcaption">Неродные просторы
-            <div class="photographer">Автор: Борис</div>
+            <div class="photographer">Автор фото: Борис</div>
             <a class="likes" href="#">Понравилось:</a>
             <span class="likes__number">1350</span>
           </figcaption>
         </figure>
         <figure class="photo-list-item">
-          <img class="photo-list-item__photo" src="#" alt="Местная растительность" width="280" height="280" />
+          <img class="photo-list-item__photo" src="/img/photo-2-mobile@1x.jpg" alt="Местная растительность" width="280" height="280" />
           <figcaption class="photo-list-item__figcaption">Местная растительность
-            <div class="photographer">Автор: Сергей</div>
+            <div class="photographer">Автор фото: Сергей</div>
             <a class="likes" href="#">Понравилось:</a>
             <span class="likes__number">143</span>
           </figcaption>
         </figure>
         <figure class="photo-list-item">
-          <img class="photo-list-item__photo" src="#" alt="Дорога на север" width="280" height="280" />
+          <img class="photo-list-item__photo" src="/img/photo-3-mobile@1x.jpg" alt="Дорога на север" width="280" height="280" />
           <figcaption class="photo-list-item__figcaption">Дорога на север
-            <div class="photographer">Автор: Петр</div>
+            <div class="photographer">Автор фото: Петр</div>
             <a class="likes" href="#">Понравилось:</a>
             <span class="likes__number">96</span>
           </figcaption>
         </figure>
         <figure class="photo-list-item">
-          <img class="photo-list-item__photo" src="#" alt="Мост дьявола" width="280" height="280" />
+          <img class="photo-list-item__photo" src="/img/photo-4-mobile@1x.jpg" alt="Мост дьявола" width="280" height="280" />
           <figcaption class="photo-list-item__figcaption">Мост дьявола
-            <div class="photographer">Автор: Антон</div>
+            <div class="photographer">Автор фото: Антон</div>
             <a class="likes" href="#">Понравилось:</a>
             <span class="likes__number">254</span>
           </figcaption>
@@ -64,16 +69,18 @@
       </section>
       <section class="video-intro">
         <h2 class="video-intro__title">Все еще сомневаетесь?</h2>
-        <p class="video-intro__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <p class="video-intro__text">Смотрите видеопрезентацию и<br> скорее за билетами, пока они не подорожали в очередной раз!</p>
       </section>
       <section class="promo-video">
         <h3 class="visually-hidden">Видеоролик о Седоне:</h3>
         <div class="promo-video__wrapper">
-          <img class="promo-video__preview-img" src="#" alt="Видео о Седоне" />
-          <div class="promo-video__volume-scale">Громкость</div>
-          <div class="promo-video__toggle promo-video__toggle--replay">Повторить</div>
-          <div class="promo-video__toggle promo-video__toggle--subtitles">Субтитры</div>
-          <div class="promo-video__toggle promo-video__toggle--fullscreen">Во весь экран</div>
+          <img class="promo-video__preview-img" src="/img/video-mobile@1x.jpg" alt="Видео о Седоне"  width="320" height="201" />
+          <div class="promo-video__toggles">
+            <div class="promo-video__volume-scale">Громкость</div>
+            <div class="promo-video__toggle promo-video__toggle--replay">Повторить</div>
+            <div class="promo-video__toggle promo-video__toggle--subtitles">Субтитры</div>
+            <div class="promo-video__toggle promo-video__toggle--fullscreen">Во весь экран</div>
+          </div>
         </div>
       </section>
     </main>
@@ -81,15 +88,15 @@
       <div class="page-footer__section page-footer__section--hashtag">
         #visitSEDONA
       </div>
-      <div class="page-footer__section page-footer__section--social">
+      <div class="social  page-footer__section">
         <ul>
-          <li class="social-item"><a  class="social-link social-link--tw" href="#">Twitter</a></li>
-          <li class="social-item"><a  class="social-link social-link--fb" href="#">Facebook</a></li>
-          <li class="social-item"><a  class="social-link social-link--yt" href="#">Youtube</a></li>
+          <li class="social__item"><a  class="social__link social__link--tw" href="#">Twitter</a></li>
+          <li class="social__item"><a  class="social__link social__link--fb" href="#">Facebook</a></li>
+          <li class="social__item"><a  class="social__link social__link--yt" href="#">Youtube</a></li>
         </ul>
       </div>
       <div class="page-footer__section page-footer__section--copyright">Разработано
-        <a href="#" class="page-footer__copyright-logo">HTMLAcademy</a>
+        <a href="https://htmlacademy.ru/" class="page-footer__copyright-logo">HTMLAcademy</a>
       </div>
     </footer>
   </body>

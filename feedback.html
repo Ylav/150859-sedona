@@ -3,24 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона обратная связь</title>
+    <link href="/fonts/ptsans.woff" rel='stylesheet' type='text/css'>
+    <link href="/fonts/ptsans.woff2" rel='stylesheet' type='text/css'>
+    <link href="/fonts/ptsansbold.woff" rel='stylesheet' type='text/css'>
+    <link href="/fonts/ptsansbold.woff2" rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav main-nav--closed">
         <ul>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Фото и видео</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Форма отзыва</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
+          <span class="main-nav__close">Закрыть меню</span>
+          <li class="main-nav__item"><a class="main-nav__link" href="/index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="/photo.html">Фото и видео</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="/feedback.html">Форма отзыва</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
         </ul>
         <div class="main-nav__wrapper">
           <div class="main-logo"><img src="#" alt="City of Sedona" /></div>
           <div class="main-nav__toggle">Показать меню</div>
         </div>
       </nav>
-      <div class="main-photo-wrapper">
-        <h1 class="visually-hidden">Sedona</h1>
-        <img class="main-photo" src="#" alt="Sedona" />
+      <div class="main-photo">
+        <h1 class="main-photo__title">Sedona</h1>
       </div>
     </header>
     <main class="page-main">
@@ -31,20 +36,26 @@
       <form class="feedback-form" method="post" action="#" name="feedback">
         <div class="feedback-form__section">
           <h3 class="feedback-form__title">Представьтесь, пожалуйста:</h3>
-          <label class="feedback-form__text-label" for="name">Имя</label>
-          <input class="feedback-form__cell feedback-form__cell--name" id="name" type="text" value="Петр">
-          <label class="feedback-form__text-label" for="surname">Фамилия</label>
-          <input class="feedback-form__cell feedback-form__cell--surname" id="surname" type="text" value="Иванов">
-          <label class="feedback-form__text-label" for="middle-name">Отчество</label>
-          <input  class="feedback-form__cell feedback-form__cell--middle-name" id="middle-name" type="text" value="Александрович">
+          <div class="feedback-form__line">
+            <label class="feedback-form__text-label" for="name">Имя</label>
+            <input class="feedback-form__cell feedback-form__cell--name" id="name" type="text" value="Петр">
+          </div>
+          <div class="feedback-form__line">
+            <label class="feedback-form__text-label" for="surname">Фамилия</label>
+            <input class="feedback-form__cell feedback-form__cell--surname" id="surname" type="text" value="Иванов">
+          </div>
+          <div class="feedback-form__line">
+            <label class="feedback-form__text-label" for="middle-name">Отчество</label>
+            <input  class="feedback-form__cell feedback-form__cell--middle-name" id="middle-name" type="text" value="Александрович">
+          </div>
         </div>
         <div class="feedback-form__section">
           <h3 class="feedback-form__title">Контактная информация:</h3>
-          <label class="feedback-form__text-label" for="tel">Контактный телефон:</label>
-          <input class="feedback-form__cell feedback-form__cell--phone" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" value="Введите телефон" />
+          <label class="feedback-form__text-label feedback-form__text-label--contacts" for="tel">Контактный телефон:</label>
+          <input class="feedback-form__cell feedback-form__cell--phone feedback-form__cell--contacts" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" value="Введите телефон" />
           <div class="error">Ошибка, перепроверьте номер</div>
-          <label class="feedback-form__text-label" for="email">Электронная почта</label>
-          <input class="feedback-form__cell feedback-form__cell--email" type="email" id="email" name="email" value="Введите e-mail" />
+          <label class="feedback-form__text-label feedback-form__text-label--contacts" for="email">Электронная почта</label>
+          <input class="feedback-form__cell feedback-form__cell--email feedback-form__cell--contacts" type="email" id="email" name="email" value="Введите e-mail" />
         </div>
         <div class="feedback-form__section">
           <h3 class="feedback-form__title">Ваше общее впечатление:</h3>
@@ -82,7 +93,7 @@
         </div>
         <div class="feedback-form__section">
           <h3 class="feedback-form__title">Опишите свои эмоции:</h3>
-          <textarea class="feedback-form__cell feedback-form__cell--textarea" name="name" rows="8" cols="40">Опишите подробно все свои восторги </textarea>
+          <textarea class="feedback-form__cell feedback-form__cell--textarea" name="name" rows="8" cols="25">Опишите подробно все свои восторги </textarea>
         </div>
         <button type="submit" name="feedback-form__submit" class="btn btn--feedback-submit">Отправить отзыв</button>
       </form>
@@ -91,15 +102,15 @@
       <div class="page-footer__section page-footer__section--hashtag">
         #visitSEDONA
       </div>
-      <div class="page-footer__section page-footer__section--social">
+      <div class="social page-footer__section">
         <ul>
-          <li class="social-item"><a  class="social-link social-link--tw" href="#">Twitter</a></li>
-          <li class="social-item"><a  class="social-link social-link--fb" href="#">Facebook</a></li>
-          <li class="social-item"><a  class="social-link social-link--yt" href="#">Youtube</a></li>
+          <li class="social__item"><a  class="social__link social__link--tw" href="#">Twitter</a></li>
+          <li class="social__item"><a  class="social__link social__link--fb" href="#">Facebook</a></li>
+          <li class="social__item"><a  class="social__link social__link--yt" href="#">Youtube</a></li>
         </ul>
       </div>
       <div class="page-footer__section page-footer__section--copyright">Разработано
-        <a href="#" class="page-footer__copyright-logo">HTMLAcademy</a>
+        <a href="https://htmlacademy.ru/" class="page-footer__copyright-logo">HTMLAcademy</a>
       </div>
     </footer>
   </body>
