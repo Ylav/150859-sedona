@@ -1,11 +1,12 @@
 .booking {
-  padding-left: $small-margin;
-  padding-right: $small-margin;
+  width: 100%;
   padding-top: 30px;
   text-align: center;
 }
 
 .booking__title {
+  padding-left: $small-margin;
+  padding-right: $small-margin;
   margin-top: $medium-margin;
   margin-bottom: $small-margin;
   font-size: $big-title;
@@ -13,12 +14,13 @@
 }
 
 .booking__text {
+  padding-left: $small-margin;
+  padding-right: $small-margin;
   margin: 0;
   font-size: $text;
   line-height: 24px;
 }
 
-.booking .btn {
-  margin-bottom: $big-margin;
-  margin-top: $medium-margin;
+.booking__map img {
+  width: 100%;
 }

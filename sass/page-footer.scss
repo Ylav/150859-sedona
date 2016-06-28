@@ -1,34 +1,42 @@
 .page-footer {
-  margin-left: auto;
-  margin-right: auto;
+  @include container;
   padding-top: $footer-padding;
+}
+
+@media (min-width: 768px) and (max-width: 1202px) {
+
+  .page-footer {
+    @include container-tablet;
+  }
+}
+
+@media (min-width: 1203px) {
+
+  .page-footer {
+    @include container-desktop;
+  }
 }
 
 .page-footer__section {
   padding-bottom: $footer-padding;
-  margin-left: 83px;
+  margin-left: $small-margin;
+  margin-right: $small-margin;
+  text-align: center;
 }
 
 .page-footer__section--hashtag {
-  padding-left: 7px;
   font-size: $big-title;
   line-height: $line-height-big;
   font-weight: bold;
 }
 
 .page-footer__section--copyright {
-  display: block;
-  float: left;
-  padding-left: 11px;
   font-size: $text;
   line-height: $line-height-big;
   font-weight: normal;
 }
 
 .page-footer__copyright-logo {
-  display: block;
-  float: right;
-  margin-left: 11px;
   width: 27px;
   height: 34px;
   font-size: 0;

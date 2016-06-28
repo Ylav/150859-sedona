@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="/fonts/ptsans.woff" rel='stylesheet' type='text/css'>
     <link href="/fonts/ptsans.woff2" rel='stylesheet' type='text/css'>
@@ -11,7 +12,7 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav">
         <ul>
           <span class="main-nav__close">Закрыть меню</span>
           <li class="main-nav__item"><a class="main-nav__link" href="/index.html">Главная</a></li>
@@ -19,10 +20,10 @@
           <li class="main-nav__item"><a class="main-nav__link" href="/feedback.html">Форма отзыва</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
         </ul>
-        <div class="main-nav__wrapper">
-          <div class="main-logo"><img src="#" alt="City of Sedona" /></div>
+        <div class="main-nav__toggle-wrapper main-nav__toggle-wrapper--closed">
           <div class="main-nav__toggle">Показать меню</div>
         </div>
+        <div class="main-logo"><img src="#" alt="City of Sedona" /></div>
       </nav>
       <div class="main-photo main-photo--full">
         <h1 class="main-photo__title">Welcome to the gorgeous Sedona</h1>
@@ -39,8 +40,7 @@
           <h3 class="advantage__title">Настоящий городок</h3>
           <span class="advantage__number"> — №1 — </span>
           <p class="advantage__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
-        </div>
-        <img src="/img/photo-city@1x.jpg" height="400" width="800" alt="Настоящий городок"/>
+          <img class="advantage__img" src="/img/photo-city@1x.jpg" height="400" width="800" alt="Настоящий городок"/>
         </div>
         <ul class="promo-list">
           <li class="promo-list__item">
@@ -62,8 +62,8 @@
           <h3 class="advantage__title">Там есть мост Дьявола</h3>
           <span class="advantage__number"> — №2 — </span>
           <p class="advantage__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <img src="/img/photo-bridge@1x.jpg" height="400" width="800" alt="Мост Дьявола" class="advantage__img"/>
         </div>
-        <img src="/img/photo-bridge@1x.jpg" height="400" width="800" alt="Мост Дьявола"  class="advantage__img"/>
       </section>
       <section class="advantage">
         <div class="advantage__head">
@@ -89,9 +89,9 @@
       <section class="booking">
         <h3 class="booking__title">Заинтересовались?</h3>
         <p class="booking__text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a href="#" class="btn">Найти гостиницу</a>
+        <a href="#" class="btn btn--booking">Найти гостиницу</a>
         <div class="booking__map">
-          <img src="/img/bg-map-mobile@1x.jpg" alt="карта"/>
+          <img src="/img/bg-map-mobile@1x.jpg" height="350" width="320"  alt="карта"/>
         </div>
       </section>
     </main>

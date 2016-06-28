@@ -1,6 +1,13 @@
 .advantage {
-  width: $body-size;
   background-color: $white_advantage;
+}
+
+@media (min-width: 768px) {
+
+  .advantage__head {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 .advantage__head--full {

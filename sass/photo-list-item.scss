@@ -1,17 +1,17 @@
 .photo-list-item {
+  width: 100%;
   border-top: $border;
   margin: 0;
   padding: 0;
 }
 
 .photo-list-item__photo {
-  margin-left: $small-margin;
-  margin-right: $small-margin;
+  width: 100%;
   margin-top: 22px;
 }
 
 .photo-list-item__figcaption {
-  width: $photo-size;
+  width: 100%;
   margin-left: $small-margin;
   margin-right: $small-margin;
   padding-top: $small-margin;

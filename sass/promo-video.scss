@@ -1,9 +1,12 @@
 .promo-video__wrapper {
-  position: relative;
+  width: 100%;
   background-color: $white_3;
 }
 
 .promo-video__toggles{
+  position: relative;
+  margin-left: $small-margin;
+  margin-right: $small-margin;
   min-height: 70px;
   background-color: $white_3;
 }
@@ -15,6 +18,10 @@
   background-color: $blue;
 }
 
+.promo-video__preview-img {
+  width: 100%;
+}
+
 .promo-video__toggle--replay,
 .promo-video__toggle--subtitles,
 .promo-video__toggle--fullscreen {
@@ -23,9 +30,9 @@
 
 .promo-video__volume-scale {
   position: absolute;
-  width: 280px;
+  width: 100%;
   min-height: 45px;
-  top: 156px;
+  top: -50px;
   left: 20px;
   font-size: 0;
   background-color: $darkgrey;

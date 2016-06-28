@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона обратная связь</title>
     <link href="/fonts/ptsans.woff" rel='stylesheet' type='text/css'>
     <link href="/fonts/ptsans.woff2" rel='stylesheet' type='text/css'>
@@ -11,7 +13,7 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav">
         <ul>
           <span class="main-nav__close">Закрыть меню</span>
           <li class="main-nav__item"><a class="main-nav__link" href="/index.html">Главная</a></li>
@@ -19,10 +21,10 @@
           <li class="main-nav__item"><a class="main-nav__link" href="/feedback.html">Форма отзыва</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
         </ul>
-        <div class="main-nav__wrapper">
-          <div class="main-logo"><img src="#" alt="City of Sedona" /></div>
+        <div class="main-nav__toggle-wrapper">
           <div class="main-nav__toggle">Показать меню</div>
         </div>
+        <div class="main-logo"><img src="#" alt="City of Sedona" /></div>
       </nav>
       <div class="main-photo">
         <h1 class="main-photo__title">Sedona</h1>
@@ -93,7 +95,7 @@
         </div>
         <div class="feedback-form__section">
           <h3 class="feedback-form__title">Опишите свои эмоции:</h3>
-          <textarea class="feedback-form__cell feedback-form__cell--textarea" name="name" rows="8" cols="25">Опишите подробно все свои восторги </textarea>
+          <textarea class="feedback-form__cell feedback-form__cell--textarea" name="name" rows="8" cols="10">Опишите подробно все свои восторги </textarea>
         </div>
         <button type="submit" name="feedback-form__submit" class="btn btn--feedback-submit">Отправить отзыв</button>
       </form>

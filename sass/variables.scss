@@ -1,4 +1,5 @@
 $white: #ffffff;
+$black: #000000;
 $white_advantage: #eeeeee;
 $white_3: #f2f2f2;
 $body-color: #eeeeee;
@@ -16,6 +17,7 @@ $line-height-medium: 24px;
 $line-height-big: 26px;
 $black: #000000;
 $main-photo: url(../img/bg-back-mobile@1x.jpg);
+$main-photo-big: url(../img/back-desktop.svg);
 $btn-padding: 16px;
 $footer-padding: 40px;
 $medium-margin: 30px;
@@ -23,3 +25,19 @@ $big-margin: 50px;
 $small-margin: 20px;
 $padding-big: 70px;
 $border: solid 1px $grey;
+
+
+@mixin container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@mixin container-tablet {
+  width: 768px;
+  margin: 0 auto;
+}
+
+@mixin container-desktop {
+  width: 1203px;
+  margin: 0 auto;
+}

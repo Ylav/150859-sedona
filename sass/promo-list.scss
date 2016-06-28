@@ -10,3 +10,11 @@
   margin-top: $small-margin;
   margin-bottom: $medium-margin;
 }
+
+@media (min-width: 768px) {
+
+  .promo-list {
+    display: flex;
+  }
+
+}
