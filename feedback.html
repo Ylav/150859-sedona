@@ -13,11 +13,11 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
+        <span class="main-nav__close">Закрыть меню</span>
         <ul>
-          <span class="main-nav__close">Закрыть меню</span>
           <li class="main-nav__item"><a class="main-nav__link" href="/index.html">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="/photo.html">Фото и видео</a></li>
-          <div class="main-logo"><img src="#" alt="City of Sedona" /></div>
+          <li class="main-logo"><img src="#" alt="City of Sedona" /></li>
           <li class="main-nav__item"><a class="main-nav__link" href="/feedback.html">Форма отзыва</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
         </ul>
@@ -35,7 +35,7 @@
         <p class="page-main-intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
       <form class="feedback-form" method="post" action="#" name="feedback">
-        <div class="feedback-form__section">
+        <div class="feedback-form__section feedback-form__section--name">
           <h3 class="feedback-form__title">Представьтесь, пожалуйста:</h3>
           <div class="feedback-form__line">
             <label class="feedback-form__text-label" for="name">Имя</label>
@@ -50,7 +50,7 @@
             <input  class="feedback-form__cell feedback-form__cell--middle-name" id="middle-name" type="text" value="Александрович">
           </div>
         </div>
-        <div class="feedback-form__section">
+        <div class="feedback-form__section feedback-form__section--contacts">
           <h3 class="feedback-form__title">Контактная информация:</h3>
           <label class="feedback-form__text-label feedback-form__text-label--contacts" for="tel">Контактный телефон:</label>
           <input class="feedback-form__cell feedback-form__cell--phone feedback-form__cell--contacts" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" value="Введите телефон" />
@@ -58,7 +58,7 @@
           <label class="feedback-form__text-label feedback-form__text-label--contacts" for="email">Электронная почта</label>
           <input class="feedback-form__cell feedback-form__cell--email feedback-form__cell--contacts" type="email" id="email" name="email" value="Введите e-mail" />
         </div>
-        <div class="feedback-form__section">
+        <div class="feedback-form__section feedback-form__section--effect">
           <h3 class="feedback-form__title">Ваше общее впечатление:</h3>
           <label class="feedback-form__rb-label" for="positive">
             <input class="feedback-form__rb-cell" type="radio" name="effect" id="positive" value="positive" checked />
@@ -73,7 +73,7 @@
             <span class="feedback-form__rb-title">Затрудняюсь ответить</span>
           </label>
         </div>
-        <div class="feedback-form__section">
+        <div class="feedback-form__section feedback-form__section--places">
           <h3 class="feedback-form__title">Посещенные достопримечательности:</h3>
           <label class="feedback-form__ch-label" for="devil">
             <input class="feedback-form__ch-cell" type="checkbox" name="places" value="devil" id="devil" checked />
@@ -92,7 +92,7 @@
             <span class="feedback-form__ch-title">Красные скалы</span>
           </label>
         </div>
-        <div class="feedback-form__section">
+        <div class="feedback-form__section feedback-form__section--emotions">
           <h3 class="feedback-form__title">Опишите свои эмоции:</h3>
           <textarea class="feedback-form__cell feedback-form__cell--textarea" name="name" rows="8" cols="10">Опишите подробно все свои восторги </textarea>
         </div>
