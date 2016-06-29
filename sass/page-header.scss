@@ -1,4 +1,6 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   position: relative;
   padding-bottom: 30px;
   margin-bottom: 50px;
@@ -8,6 +10,8 @@
 @media (min-width: 768px) and (max-width: 1202px) {
 
   .page-header {
+    display: flex;
+    flex-direction: column;
     @include container-tablet;
     min-height: 56px;
     padding-bottom: 30px;
@@ -18,6 +22,8 @@
 @media (min-width: 1203px) {
 
   .page-header {
+    display: flex;
+    flex-direction: column;
     @include container-desktop;
     min-height: 56px;
     padding-bottom: 30px;

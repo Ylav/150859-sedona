@@ -1,4 +1,6 @@
 .page-footer {
+  display: flex;
+  flex-direction: column;
   @include container;
   padding-top: $footer-padding;
 }
@@ -8,6 +10,7 @@
   .page-footer {
     @include container-tablet;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
   }
 }
@@ -17,6 +20,7 @@
   .page-footer {
     @include container-desktop;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
   }
 }
