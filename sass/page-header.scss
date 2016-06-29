@@ -1,1 +1,26 @@
+.page-header {
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+  @include container;
+}
 
+@media (min-width: 768px) and (max-width: 1202px) {
+
+  .page-header {
+    @include container-tablet;
+    min-height: 56px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1203px) {
+
+  .page-header {
+    @include container-desktop;
+    min-height: 56px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+  }
+}

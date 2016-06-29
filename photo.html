@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона фотографии</title>
     <link href="/fonts/ptsans.woff" rel='stylesheet' type='text/css'>
     <link href="/fonts/ptsans.woff2" rel='stylesheet' type='text/css'>
@@ -11,16 +12,16 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav">
+        <span class="main-nav__close">Закрыть меню</span>
         <ul>
-          <span class="main-nav__close">Закрыть меню</span>
           <li class="main-nav__item"><a class="main-nav__link" href="/index.html">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="/photo.html">Фото и видео</a></li>
+          <li class="main-logo"><img src="#" alt="City of Sedona" /></li>
           <li class="main-nav__item"><a class="main-nav__link" href="/feedback.html">Форма отзыва</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
         </ul>
-        <div class="main-nav__wrapper">
-          <div class="main-logo"><img src="#" alt="City of Sedona" /></div>
+        <div class="main-nav__toggle-wrapper main-nav__toggle-wrapper--closed">
           <div class="main-nav__toggle">Показать меню</div>
         </div>
       </nav>
@@ -28,42 +29,58 @@
         <h1 class="main-photo__title">Sedona</h1>
       </div>
     </header>
-    <main class="page-main">
+    <main class="page-main page-main--photo">
       <section class="page-main-intro">
         <h2 class="page-main-intro__title">Фото и видео</h2>
         <p class="page-main-intro__text">Не можете решиться на путешествие из-за курса? Фотографии помогут<br> вам забыть о политике и экономике!</p>
       </section>
-      <section class="photo-list">
-        <figure class="photo-list-item">
-          <img class="photo-list-item__photo" src="/img/photo-1-mobile@1x.jpg" alt="Неродные просторы" width="280" height="280" />
-          <figcaption class="photo-list-item__figcaption">Неродные просторы
-            <div class="photographer">Автор фото: Борис</div>
-            <a class="likes" href="#">Понравилось:</a>
+      <figure class="photo-list-item photo-list-item--big">
+        <img src="/img/photo-1-mobile@1x.jpg" alt="Неродные просторы" width="280" height="280" />
+        <figcaption class="figcaption">
+          <div class="figcaption__name">
+            Неродные просторы
+            <div class="figcaption__photographer">Автор фото: Борис</div>
+          </div>
+          <a class="figcaption__likes" href="#">Понравилось:
             <span class="likes__number">1350</span>
+          </a>
+        </figcaption>
+      </figure>
+      <section class="photo-list">
+        <figure class="photo-list-item photo-list-item--small">
+          <img src="/img/photo-2-mobile@1x.jpg" alt="Местная растительность" width="280" height="280" />
+          <figcaption class="figcaption">
+            <div class="figcaption__name">
+              Местная растительность
+              <div class="figcaption__photographer">Автор фото: Сергей</div>
+            </div>
+            <a class="figcaption__likes" href="#">Понравилось:
+              <span class="figcaption__likes-number">143</span>
+            </a>
           </figcaption>
         </figure>
-        <figure class="photo-list-item">
-          <img class="photo-list-item__photo" src="/img/photo-2-mobile@1x.jpg" alt="Местная растительность" width="280" height="280" />
-          <figcaption class="photo-list-item__figcaption">Местная растительность
-            <div class="photographer">Автор фото: Сергей</div>
-            <a class="likes" href="#">Понравилось:</a>
-            <span class="likes__number">143</span>
+        <figure class="photo-list-item photo-list-item--small">
+          <img src="/img/photo-3-mobile@1x.jpg" alt="Дорога на север" width="280" height="280" />
+          <figcaption class="figcaption">
+            <div class="figcaption__name">
+              Дорога на север
+              <div class="figcaption__photographer">Автор фото: Петр</div>
+            </div>
+            <a class="figcaption__likes" href="#">Понравилось:
+              <span class="figcaption__likes-number">96</span>
+            </a>
           </figcaption>
         </figure>
-        <figure class="photo-list-item">
-          <img class="photo-list-item__photo" src="/img/photo-3-mobile@1x.jpg" alt="Дорога на север" width="280" height="280" />
-          <figcaption class="photo-list-item__figcaption">Дорога на север
-            <div class="photographer">Автор фото: Петр</div>
-            <a class="likes" href="#">Понравилось:</a>
-            <span class="likes__number">96</span>
-          </figcaption>
-        </figure>
-        <figure class="photo-list-item">
-          <img class="photo-list-item__photo" src="/img/photo-4-mobile@1x.jpg" alt="Мост дьявола" width="280" height="280" />
-          <figcaption class="photo-list-item__figcaption">Мост дьявола
-            <div class="photographer">Автор фото: Антон</div>
-            <a class="likes" href="#">Понравилось:</a>
-            <span class="likes__number">254</span>
+        <figure class="photo-list-item photo-list-item--small">
+          <img src="/img/photo-4-mobile@1x.jpg" alt="Мост дьявола" width="280" height="280" />
+          <figcaption class="figcaption">
+            <div class="figcaption__name">
+              Мост дьявола
+              <div class="figcaption__photographer">Автор фото: Антон</div>
+            </div>
+            <a class="figcaption__likes" href="#">Понравилось:
+              <span class="figcaption__likes-number">254</span>
+            </a>
           </figcaption>
         </figure>
       </section>

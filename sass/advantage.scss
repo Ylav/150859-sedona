@@ -1,6 +1,37 @@
 .advantage {
-  width: $body-size;
   background-color: $white_advantage;
+}
+
+@media (min-width: 768px) {
+
+  .advantage--big {
+    height: 255px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .advantage__small-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .advantage--small {
+     width: 33%;
+     margin: 0;
+   }
+
+  .advantage__head--full {
+    width: 33%;
+  }
+
+  .advantage__img {
+    width: 67%;
+    height: auto;
+  }
+
+  .advantage--big:nth-child(2) {
+    flex-direction: row-reverse;;
+  }
 }
 
 .advantage__head--full {

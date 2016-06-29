@@ -1,6 +1,8 @@
 .page-main-intro {
   min-height: 240px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-main-intro__title {
@@ -15,8 +17,22 @@
 .page-main-intro__text {
   margin: 0;
   padding-top: 32px;
+  padding-bottom: 32px;
   padding-left: $small-margin;
   padding-right: $small-margin;
   font-size: $text;
   line-height: 26px;
+}
+@media (min-width: 768px) and (max-width: 1202px) {
+
+  .page-main-intro__title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1203px) {
+
+  .page-main-intro__title {
+    font-size: 30px;
+  }
 }

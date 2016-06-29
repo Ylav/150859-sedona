@@ -1,8 +1,11 @@
 .social {
+  display: flex;
+ justify-content: center;
   padding-bottom: $footer-padding;
   ul {
     padding: 0;
     margin: 0;
+    padding-left: 15px;
   }
 }
 
