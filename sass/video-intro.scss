@@ -19,3 +19,17 @@
   font-size: $text;
   line-height: $line-height-medium;
 }
+
+@media (min-width: 768px) and (max-width: 1202px) {
+
+  .video-intro__title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1203px) {
+
+  .video-intro__title {
+    font-size: 30px;
+  }
+}

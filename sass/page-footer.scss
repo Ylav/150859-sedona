@@ -7,6 +7,8 @@
 
   .page-footer {
     @include container-tablet;
+    display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -14,6 +16,8 @@
 
   .page-footer {
     @include container-desktop;
+    display: flex;
+    justify-content: space-around;
   }
 }
 

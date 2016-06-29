@@ -1,17 +1,24 @@
-.photo-list {
-  @include container;
-}
-
-@media (min-width: 768px) and (max-width: 1202px) {
+@media (min-width: 768px) and (max-width: 1203px) {
 
   .photo-list {
-    @include container-tablet;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 768px;
+    max-width: 1203px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 }
 
 @media (min-width: 1203px) {
 
   .photo-list {
-    @include container-desktop;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    min-width: 1203px;
+    max-width: none;
+    margin: 0 auto;
   }
 }

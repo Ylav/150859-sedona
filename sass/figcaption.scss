@@ -1,0 +1,42 @@
+.figcaption__photographer {
+  margin-top: 7px;
+  margin-bottom: 12px;
+  text-transform: none;
+  font-weight: normal;
+}
+
+.figcaption {
+  width: 100%;
+  margin-left: $small-margin;
+  margin-right: $small-margin;
+  padding-top: $small-margin;
+  padding-bottom: $small-margin;
+  font-size: $text;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) and (max-width: 1202px) {
+  
+  .figcaption {
+    margin: 0;
+    padding-left: $small-margin;
+    padding-right: $small-margin;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1203px) {
+
+  .figcaption {
+    margin: 0;
+    padding-left: $small-margin;
+    padding-right: $small-margin;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+}

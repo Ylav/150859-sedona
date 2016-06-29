@@ -28,16 +28,22 @@ $border: solid 1px $grey;
 
 
 @mixin container {
-  width: 320px;
+  width: 100%;
+  min-width: 320px;
+  max-width: 768px;
   margin: 0 auto;
 }
 
 @mixin container-tablet {
-  width: 768px;
+  width: 100%;
+  min-width: 768px;
+  max-width: 1203px;
   margin: 0 auto;
 }
 
 @mixin container-desktop {
-  width: 1203px;
+  width: 95%;
+  min-width: 1203px;
+  max-width: none;
   margin: 0 auto;
 }
