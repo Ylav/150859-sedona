@@ -16,3 +16,41 @@ img {
 .visually-hidden {
   display: none;
 }
+
+.remark {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1203px) {
+
+  .remark {
+    margin: 0;
+    display: block;
+    width: 50%;
+    text-align: right;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-width: 325px;
+    max-width: 480px;
+    font-size: $text;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 1203px) {
+
+  .remark {
+    margin: 0;
+    display: block;
+    width: 50%;
+    text-align: right;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-width: 480px;
+    max-width: none;
+    font-size: $text;
+  }
+}

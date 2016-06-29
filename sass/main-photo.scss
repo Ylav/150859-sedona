@@ -26,6 +26,9 @@
 @media (min-width: 1203px) {
 
   .main-photo {
-    @include container-desktop;
+    width: 100%;
+    min-width: 1203px;
+    max-width: none;
+    margin: 0 auto;
   }
 }
