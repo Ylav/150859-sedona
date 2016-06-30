@@ -1,4 +1,9 @@
 .video-intro {
+  width: 88%;
+  min-width: 320px;
+  max-width: 768px;
+  margin: 0 auto;
+  flex-direction: column;
   border-top: $border;
   text-align: center;
 }

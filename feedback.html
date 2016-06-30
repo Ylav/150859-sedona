@@ -14,7 +14,7 @@
     <header class="page-header">
       <nav class="main-nav">
         <span class="main-nav__close">Закрыть меню</span>
-        <ul>
+        <ul class="main-nav__menu">
           <li class="main-nav__item"><a class="main-nav__link" href="/index.html">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="/photo.html">Фото и видео</a></li>
           <li class="main-logo"><img src="#" alt="City of Sedona" /></li>
@@ -32,30 +32,30 @@
     <main class="page-main">
       <section class="page-main-intro">
         <h2 class="page-main-intro__title">Оставьте свой отзыв</h2>
-        <p class="page-main-intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <p class="page-main-intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br> а также о посещенных вами достопримечательностях</p>
       </section>
       <form class="feedback-form" method="post" action="#" name="feedback">
         <div class="feedback-form__section feedback-form__section--name">
-          <h3 class="feedback-form__title">Представьтесь, пожалуйста:</h3>
+          <h3 class="feedback-form__title">Представьтесь<b class="hidden">, пожалуйста</b>:</h3>
           <div class="feedback-form__line">
-            <label class="feedback-form__text-label" for="name">Имя</label>
+            <label class="feedback-form__text-label" for="name">Имя:</label>
             <input class="feedback-form__cell feedback-form__cell--name" id="name" type="text" value="Петр">
           </div>
           <div class="feedback-form__line">
-            <label class="feedback-form__text-label" for="surname">Фамилия</label>
+            <label class="feedback-form__text-label" for="surname">Фамилия:</label>
             <input class="feedback-form__cell feedback-form__cell--surname" id="surname" type="text" value="Иванов">
           </div>
           <div class="feedback-form__line">
-            <label class="feedback-form__text-label" for="middle-name">Отчество</label>
+            <label class="feedback-form__text-label" for="middle-name">Отчество:</label>
             <input  class="feedback-form__cell feedback-form__cell--middle-name" id="middle-name" type="text" value="Александрович">
           </div>
         </div>
         <div class="feedback-form__section feedback-form__section--contacts">
-          <h3 class="feedback-form__title">Контактная информация:</h3>
+          <h3 class="feedback-form__title feedback-form__title--contacts">Контактная информация:</h3>
           <label class="feedback-form__text-label feedback-form__text-label--contacts" for="tel">Контактный телефон:</label>
-          <input class="feedback-form__cell feedback-form__cell--phone feedback-form__cell--contacts" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" value="Введите телефон" />
-          <div class="error">Ошибка, перепроверьте номер</div>
-          <label class="feedback-form__text-label feedback-form__text-label--contacts" for="email">Электронная почта</label>
+          <input class="feedback-form__cell feedback-form__cell--phone feedback-form__cell--contacts" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" value="Введите номер" />
+          <div class="error visually-hidden">Ошибка, перепроверьте номер</div>
+          <label class="feedback-form__text-label feedback-form__text-label--contacts" for="email">Электронная почта:</label>
           <input class="feedback-form__cell feedback-form__cell--email feedback-form__cell--contacts" type="email" id="email" name="email" value="Введите e-mail" />
         </div>
         <div class="feedback-form__section feedback-form__section--effect">
@@ -74,7 +74,7 @@
           </label>
         </div>
         <div class="feedback-form__section feedback-form__section--places">
-          <h3 class="feedback-form__title">Посещенные достопримечательности:</h3>
+          <h3 class="feedback-form__title feedback-form__title--places">Посещенные достопримечательности:</h3>
           <label class="feedback-form__ch-label" for="devil">
             <input class="feedback-form__ch-cell" type="checkbox" name="places" value="devil" id="devil" checked />
             <span class="feedback-form__ch-title">Мост Дьявола</span>
@@ -95,8 +95,9 @@
         <div class="feedback-form__section feedback-form__section--emotions">
           <h3 class="feedback-form__title">Опишите свои эмоции:</h3>
           <textarea class="feedback-form__cell feedback-form__cell--textarea" name="name" rows="8" cols="10">Опишите подробно все свои восторги </textarea>
+          <button type="submit" name="feedback-form__submit" class="btn btn--feedback-submit">Отправить отзыв</button>
+          <div class="remark">* — обязательные поля</div>
         </div>
-        <button type="submit" name="feedback-form__submit" class="btn btn--feedback-submit">Отправить отзыв</button>
       </form>
     </main>
     <footer class="page-footer">

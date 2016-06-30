@@ -5,6 +5,7 @@ $white_3: #f2f2f2;
 $body-color: #eeeeee;
 $blue: #81b3d2;
 $grey: #e5e5e5;
+$grey-border: #dbdbdb;
 $darkgrey: #666666;
 $red: #ff5c5c;
 $body-size: 320px;
@@ -24,7 +25,7 @@ $medium-margin: 30px;
 $big-margin: 50px;
 $small-margin: 20px;
 $padding-big: 70px;
-$border: solid 1px $grey;
+$border: solid 1px $grey-border;
 
 
 @mixin container {

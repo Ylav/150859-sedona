@@ -1,7 +1,15 @@
+.photo-list {
+  width: 88%;
+  min-width: 320px;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
 @media (min-width: 768px) and (max-width: 1203px) {
 
   .photo-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     min-width: 768px;
@@ -15,6 +23,7 @@
 
   .photo-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
     min-width: 1203px;
