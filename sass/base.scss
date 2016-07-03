@@ -9,7 +9,7 @@ a {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -21,7 +21,7 @@ img {
   display: none;
 }
 
-@media (min-width: 768px) and (max-width: 1203px) {
+@media (min-width: 768px) and (max-width: 1200px) {
 
   .remark {
     margin: 0;
@@ -40,7 +40,7 @@ img {
   }
 }
 
-@media (min-width: 1203px) {
+@media (min-width: 1200px) {
 
   .remark {
     margin: 0;

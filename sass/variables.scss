@@ -17,8 +17,6 @@ $big-title: 21px;
 $line-height-medium: 24px;
 $line-height-big: 26px;
 $black: #000000;
-$main-photo: url(../img/bg-back-mobile@1x.jpg);
-$main-photo-big: url(../img/back-desktop.svg);
 $btn-padding: 16px;
 $footer-padding: 40px;
 $medium-margin: 30px;
@@ -27,6 +25,14 @@ $small-margin: 20px;
 $padding-big: 70px;
 $border: solid 1px $grey-border;
 
+$main-photo: url(../img/bg-back-mobile@1x.jpg);
+$main-photo-retina: url(../img/bg-back-mobile@2x.jpg);
+$main-photo-big: url(../img/bg-back-desktop@1x.jpg);
+$main-photo-big-retina: url(../img/bg-back-desktop@2x.jpg);
+$photo-city: url(../img/photo-city@1x.jpg);
+$photo-bridge: url(../img/photo-bridge@1x.jpg);
+$photo-city2: url(../img/photo-city@2x.jpg);
+$photo-bridge2: url(../img/photo-bridge@2x.jpg);
 
 @mixin container {
   width: 100%;
@@ -38,13 +44,13 @@ $border: solid 1px $grey-border;
 @mixin container-tablet {
   width: 100%;
   min-width: 768px;
-  max-width: 1203px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 @mixin container-desktop {
   width: 95%;
-  min-width: 1203px;
+  min-width: 1200px;
   max-width: none;
   margin: 0 auto;
 }

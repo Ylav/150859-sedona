@@ -1,9 +1,20 @@
 .photo-list-item {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
   min-width: 280px;
   max-width: 650px;
   border-top: $border;
   margin: 0 auto;
+}
+
+.photo-list-item img {
+  width: 100%;
+}
+
+.photo-list-item--small {
+  width: 100%;
+  margin: 0;
 }
 
 .photo-list-item--big {
@@ -13,7 +24,7 @@
   margin: 0 auto;
   }
 
-@media (min-width: 768px) and (max-width: 1203px) {
+@media (min-width: 768px) and (max-width: 1200px) {
 
   .photo-list-item--small {
     width: 50%;
@@ -23,20 +34,24 @@
   .photo-list-item--big {
     width: 100%;
     min-width: 650px;
-    max-width: 1203px;
+    max-width: 1200px;
     margin: 0 auto;
     }
 }
 
-@media (min-width: 1203px) {
+@media (min-width: 1200px) {
 
   .photo-list-item--small {
     width: 33.33%;
+    min-width: 400px;
+    max-width: none;
     margin: 0;
   }
 
   .photo-list-item--big {
     width: 100%;
+    min-width: 1200px;
+    max-width: none;
     margin: 0 auto;
     }
 }

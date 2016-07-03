@@ -35,7 +35,14 @@
         <p class="page-main-intro__text">Не можете решиться на путешествие из-за курса? Фотографии помогут<br> вам забыть о политике и экономике!</p>
       </section>
       <figure class="photo-list-item photo-list-item--big">
-        <img src="/img/photo-1-mobile@1x.jpg" alt="Неродные просторы" width="280" height="280" />
+        <picture>
+          <source media="(min-width: 1200px)"
+          srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@1x.jpg 2x">
+          <source media="(min-width: 768px)"
+          srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+          <img src="/img/photo-1-mobile@1x.jpg"
+          srcset="img/photo-1-mobile@2x.jpg 2x"alt="Неродные просторы" width="280" height="280" />
+        </picture>
         <figcaption class="figcaption">
           <div class="figcaption__name">
             Неродные просторы
@@ -48,7 +55,14 @@
       </figure>
       <section class="photo-list">
         <figure class="photo-list-item photo-list-item--small">
-          <img src="/img/photo-2-mobile@1x.jpg" alt="Местная растительность" width="280" height="280" />
+          <picture>
+            <source media="(min-width: 1200px)"
+            srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@1x.jpg 2x">
+            <source media="(min-width: 768px)"
+            srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+            <img src="/img/photo-2-mobile@1x.jpg"
+            srcset="img/photo-2-mobile@2x.jpg 2x"alt="Неродные просторы" width="280" height="280" />
+          </picture>
           <figcaption class="figcaption">
             <div class="figcaption__name">
               Местная растительность
@@ -60,7 +74,14 @@
           </figcaption>
         </figure>
         <figure class="photo-list-item photo-list-item--small">
-          <img src="/img/photo-3-mobile@1x.jpg" alt="Дорога на север" width="280" height="280" />
+          <picture>
+            <source media="(min-width: 1200px)"
+            srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@1x.jpg 2x">
+            <source media="(min-width: 768px)"
+            srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+            <img src="/img/photo-3-mobile@1x.jpg"
+            srcset="img/photo-3-mobile@2x.jpg 2x"alt="Неродные просторы" width="280" height="280" />
+          </picture>
           <figcaption class="figcaption">
             <div class="figcaption__name">
               Дорога на север
@@ -72,7 +93,14 @@
           </figcaption>
         </figure>
         <figure class="photo-list-item photo-list-item--small">
-          <img src="/img/photo-4-mobile@1x.jpg" alt="Мост дьявола" width="280" height="280" />
+          <picture>
+            <source media="(min-width: 1200px)"
+            srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@1x.jpg 2x">
+            <source media="(min-width: 768px)"
+            srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+            <img src="/img/photo-4-mobile@1x.jpg"
+            srcset="img/photo-4-mobile@2x.jpg 2x"alt="Неродные просторы" width="280" height="280" />
+          </picture>
           <figcaption class="figcaption">
             <div class="figcaption__name">
               Мост дьявола
@@ -91,7 +119,14 @@
       <section class="promo-video">
         <h3 class="visually-hidden">Видеоролик о Седоне:</h3>
         <div class="promo-video__wrapper">
-          <img class="promo-video__preview-img" src="/img/video-mobile@1x.jpg" alt="Видео о Седоне"  width="320" height="201" />
+          <picture>
+            <source media="(min-width: 1200px)"
+            srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+            srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="promo-video__preview-img" src="/img/video-mobile@1x.jpg"
+            srcset="img/video-mobile@2x.jpg 2x" alt="Видео о Седоне"  width="320" height="201" />
+          </picture>
           <div class="promo-video__toggles">
             <div class="promo-video__volume-scale">Громкость</div>
             <div class="promo-video__toggle promo-video__toggle--replay">Повторить</div>

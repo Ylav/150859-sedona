@@ -4,7 +4,7 @@
   @include container;
 }
 
-@media (min-width: 768px) and (max-width: 1203px) {
+@media (min-width: 768px) and (max-width: 1200px) {
 
   .page-main {
     @include container-tablet;
@@ -15,7 +15,7 @@
   }
 }
 
-@media (min-width: 1203px) {
+@media (min-width: 1200px) {
 
   .page-main {
     @include container-desktop;

@@ -1,9 +1,14 @@
 .promo-video__wrapper {
+  display: flex;
+  flex-direction: column;
   width: 88%;
   min-width: 320px;
   max-width: 768px;
   margin: 0 auto;
-  background-color: $white_3;
+}
+
+.promo-video__preview-img {
+  width: 100%;
 }
 
 .promo-video__toggles{
@@ -38,7 +43,7 @@
   opacity: 0.6;
 }
 
-@media (min-width: 768px) and (max-width: 1202px) {
+@media (min-width: 768px) and (max-width: 1200px) {
 
   .promo-video__wrapper {
     min-width: 650px;
@@ -46,7 +51,7 @@
   }
 }
 
-@media (min-width: 1203px) {
+@media (min-width: 1200px) {
 
   .promo-video__wrapper {
     width: 850px;

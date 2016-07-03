@@ -1,11 +1,13 @@
 .photo-list {
+  display: flex;
+  flex-direction: column;
   width: 88%;
   min-width: 320px;
   max-width: 768px;
   margin: 0 auto;
 }
 
-@media (min-width: 768px) and (max-width: 1203px) {
+@media (min-width: 768px) and (max-width: 1200px) {
 
   .photo-list {
     display: flex;
@@ -13,20 +15,20 @@
     flex-wrap: wrap;
     width: 100%;
     min-width: 768px;
-    max-width: 1203px;
+    max-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
   }
 }
 
-@media (min-width: 1203px) {
+@media (min-width: 1200px) {
 
   .photo-list {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
-    min-width: 1203px;
+    min-width: 1200px;
     max-width: none;
     margin: 0 auto;
   }

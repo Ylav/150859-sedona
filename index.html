@@ -21,7 +21,7 @@
           <li class="main-nav__item"><a class="main-nav__link" href="/feedback.html">Форма отзыва</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
         </ul>
-        <div class="main-nav__toggle-wrapper main-nav__toggle-wrapper--closed">
+        <div class="main-nav__toggle-wrapper">
           <div class="main-nav__toggle">Показать меню</div>
         </div>
       </nav>
@@ -41,7 +41,7 @@
           <span class="advantage__number"> — №1 — </span>
           <p class="advantage__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <img class="advantage__img" src="/img/photo-city@1x.jpg" height="400" width="800" alt="Настоящий городок"/>
+        <div class="advantage__img advantage__img--city"></div>
       </section>
       <ul class="promo-list">
         <li class="promo-list__item">
@@ -63,7 +63,7 @@
           <span class="advantage__number"> — №2 — </span>
           <p class="advantage__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
-        <img src="/img/photo-bridge@1x.jpg" height="400" width="800" alt="Мост Дьявола" class="advantage__img"/>
+        <div class="advantage__img advantage__img--bridge"></div>
       </section>
       <div class="advantage__small-wrapper">
         <section class="advantage advantage--small">
@@ -92,9 +92,13 @@
         <h3 class="booking__title">Заинтересовались?</h3>
         <p class="booking__text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a href="#" class="btn btn--booking">Найти гостиницу</a>
-        <div class="booking__map">
-          <img src="/img/bg-map-mobile@1x.jpg" height="350" width="320"  alt="карта"/>
-        </div>
+        <a class="booking__map">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
+            <img class="booking__map-img" src="img/bg-map-mobile@1x.jpg" height="350" width="320"  alt="карта"/>
+          </picture>
+        </a>
       </section>
     </main>
     <footer class="page-footer">
