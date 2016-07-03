@@ -5,7 +5,7 @@
   padding-top: $footer-padding;
 }
 
-@media (min-width: 768px) and (max-width: 1202px) {
+@media (min-width: 768px) and (max-width: 1200px) {
 
   .page-footer {
     @include container-tablet;
@@ -15,7 +15,7 @@
   }
 }
 
-@media (min-width: 1203px) {
+@media (min-width: 1200px) {
 
   .page-footer {
     @include container-desktop;

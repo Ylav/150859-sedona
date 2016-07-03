@@ -1,15 +1,37 @@
 .advantage {
+  display: flex;
+  flex-direction: column;
   background-color: $white_advantage;
+  flex-basis: 100%;
+}
+
+.advantage__img {
+  background-repeat: no-repeat;
+  background-color: #4878a6;
+  background-position: center;
+  min-height: 260px;
+}
+
+.advantage__img--city {
+  background-image: $photo-city;
+}
+
+.advantage__img--bridge {
+  background-image: $photo-bridge;
 }
 
 @media (min-width: 768px) {
 
   .advantage--big {
-    height: 255px;
+    height: 260px;
     display: flex;
     flex-direction: row;
   }
 
+  .advantage__img {
+    background-size: 100%;
+  }
+  
   .advantage__small-wrapper {
     display: flex;
     flex-direction: row;
@@ -26,11 +48,21 @@
 
   .advantage__img {
     width: 67%;
-    height: auto;
   }
 
   .advantage--big:nth-child(2) {
     flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .advantage__img--city {
+    background-image: $photo-city2;
+  }
+
+  .advantage__img--bridge {
+    background-image: $photo-bridge2;
   }
 }
 

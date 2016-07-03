@@ -1,14 +1,16 @@
 .main-photo {
+  display: flex;
+  flex-direction: column;
   @include container;
-  min-height: 160px;
   background-image: $main-photo;
   background-repeat: no-repeat;
   background-position: 50% 100%;
   background-color: #4878a6;
+  min-height: 287px;
 }
 
 .main-photo--full {
-  min-height: 380px;
+  min-height: 387px;
 }
 
 .main-photo__title,
@@ -16,19 +18,68 @@
   font-size: 0;
 }
 
-@media (min-width: 768px) and (max-width: 1202px) {
+@media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
 
   .main-photo {
-    @include container-tablet;
+    background-image: $main-photo-retina;
+    background-size: 1536px auto;
   }
 }
 
-@media (min-width: 1203px) {
+@media (min-width: 768px) and (max-width: 1200px) {
 
   .main-photo {
-    width: 100%;
-    min-width: 1203px;
-    max-width: none;
-    margin: 0 auto;
+    @include container-tablet;
+    background-image: $main-photo-big;
   }
+
+  .main-photo--full {
+    min-height: 510px;
+  }
+
+  @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+
+    .main-photo {
+      background-image: $main-photo-big-retina;
+      background-size: 2400px auto;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .main-photo {
+    min-width: 1200px;
+    max-width: none;
+    background-image: $main-photo-big;
+    background-size: 100%;
+  }
+
+  @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+
+    .main-photo {
+      min-height: 300px;
+      background-image: $main-photo-big-retina;
+      background-size: 2400px auto;
+    }
+}
+
+    .main-photo--full {
+      min-height: 510px;
+    }
+  }
+
+  @media (min-width: 2400px) {
+
+    .main-photo {
+      min-height: 300px;
+      background-image: $main-photo-big-retina;
+      background-size: 2400px auto;
+          background-size: 100%;
+    }
+
+    .main-photo--full {
+      min-height: 510px;
+    }
+
 }
